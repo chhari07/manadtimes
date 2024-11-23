@@ -1,6 +1,6 @@
 
 
-import Authors from "@/components/authors";
+
 
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -14,7 +14,7 @@ export default function Home() {
         <HeroSection />
 
        <TabsDemo/>
-       <Authors/>
+     
         <Footer />
       </main>
     </>
