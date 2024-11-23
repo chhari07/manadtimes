@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 type Tab = {
   title: string;
   value: string;
-  content?: string | React.ReactNode | any;
+  content?: string | React.ReactNode; // Removed 'any' and specified the types
 };
 
 export const Tabs = ({
@@ -15,7 +15,6 @@ export const Tabs = ({
   containerClassName,
   activeTabClassName,
   tabClassName,
-  contentClassName,
 }: {
   tabs: Tab[];
   activeTab: string;
@@ -23,12 +22,11 @@ export const Tabs = ({
   containerClassName?: string;
   activeTabClassName?: string;
   tabClassName?: string;
-  contentClassName?: string;
 }) => {
   return (
     <div
       className={cn(
-        "flex flex-row  mb-7  items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+        "flex flex-row mb-7 items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
         containerClassName
       )}
     >
