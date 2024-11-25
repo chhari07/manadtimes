@@ -62,8 +62,8 @@ export function TabsDemo() {
   };
 
   return (
-    <div className="container mx-auto px-4 my-10">
-      <div className="text-3xl mt-28 mb-5 lg:mt-1 md:text-7xl font-bold dark:text-white text-center">
+    <div className="container   mx-auto px-4 my-10">
+      <div className="text-3xl mt-28 mb-5  ml-3   lg:mt-1 md:text-7xl font-bold dark:text-white text-center">
         Browse by Category
       </div>
       {/* Tabs Navigation */}

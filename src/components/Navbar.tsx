@@ -12,7 +12,7 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         {/* Home Menu Item */}
         <MenuItem  setActive={setActive} active={active} item="Home">
-        
+        <HoveredLink href="/Home"> </HoveredLink>
         </MenuItem>
 
         
